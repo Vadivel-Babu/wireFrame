@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="flex">
+          <h1 class="logo ">slab</h1>
+          <nav class="nav">
+            <a href="#" class="link">Features</a>
+            <a href="#" class="link">use case</a>
+            <a href="#" class="link">Pricing</a>
+            <a href="#" class="link">security</a>
+          </nav>
+          <div class="btn__wrapper">
+            <button class="btn btn-light">signIn</button>
+            <button class="btn btn-secondary">signUp</button>
+          </div>
+          <button class="btn btn-light menu__open">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+          </button>
+        </div>
+        <div class="menu__block">
+          <button type="button" class="btn-close" aria-label="Close"></button>
+          <nav class="menu__nav">
+            <a href="#" class="link">Features</a>
+            <a href="#" class="link">use case</a>
+            <a href="#" class="link">Pricing</a>
+            <a href="#" class="link">security</a>
+            <a href="#" class="link">signIn</a>
+            <a href="#" class="link">signUp</a>
+          </nav>
+        </div>
+        <div class="content">
+          <div class="content-1">
+            <h1 class="title">
+              Your team's long term memory.
+            </h1>
+            <p class="para">
+              Find, build, and manage your team's organizational Knowledge, easily.
+            </p>
+            <div class="mail">
+              <input type="email" name="" id="" placeholder="Email Address">
+              <button class="btn btn-secondary">Try For Free</button>
+            </div>
+            <p class="demo">
+              View the live demo &rarr;
+            </p>
+          </div>
+          <div class="content-2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ90YcZJ3ZdBRMiGrE3UAQ64ZAMQgC1edTZg&usqp=CAU" alt="wireframe">
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="block">
+      <div class="container">
+        <ul class="list">
+          <li>Envoy</li>
+          <li>aptible</li>
+          <li>hush</li>
+          <li>FLEETSMITH</li>
+          <li>American Association</li>
+          <li>SONDER</li>
+        </ul>
+      </div>
+    </section>
+    <section class="block">
+      <div class="container">
+        <div class="block-1">
+          <img src="https://www.designinspiration.info/wp-content/uploads/2021/05/Wireframe-Handdrawn-Components.png" alt="wireframe" srcset="">
+          <div class="details">
+            <h3 class="title">
+              Organize
+            </h3>
+            <h1 class="main__title">
+              Preserve Organizational Knowledge and
+              function better as a team.
+            </h1>
+            <p class="para">
+              A paragraph about the Organization within slab. Teams that learn together, win together
+            </p>
+            <button class="btn btn-secondary">
+              Check and Features
+            </button>
+          </div>
+        </div>
+        <div class="block-1">
+          <div class="details">
+            <h4 class="title">
+              Collaborate
+            </h4>
+            <h3 class="main__title">
+              Make all the distinct processes Known and work together, in real time, to define them.
+            </h3>
+          </div>
+          <img src="https://sparxsystems.com/enterprise_architect_user_guide/14.0/images/webpage-6182.png" alt="wireframe" srcset="">
+        </div>
+      </div>
+    </section>
+
+  
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+       let menuOpen = document.querySelector('.menu__open');
+       let menuClose = document.querySelector('.btn-close');
+       let menu = document.querySelector('.menu__block');
+       let body = document.querySelector('body');
+       menuOpen.addEventListener('click',() => {
+        menu.style.display = 'block';
+        body.style.overflow = 'hidden';
+       })
+       menuClose.addEventListener('click',() => {
+        menu.style.display = 'none';
+        body.style.overflow = 'visible';
+       })
+     </script>
+  </body>
+</html>
